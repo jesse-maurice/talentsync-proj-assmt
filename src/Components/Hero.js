@@ -27,7 +27,7 @@ const Hero = () => {
   useEffect(() => {
     ScrollReveal().reveal('.image-grid-container', {
       distance: '60px',
-      duration: 3000,
+      duration: 2000,
       easing: 'ease-in',
       origin: 'right',
       reset: false
@@ -38,8 +38,8 @@ const Hero = () => {
   return (
     <>
       <div className="w-full font-inter pt-[40px] px-10 pb-[96px] relative">
-        <div className=" opacity-15 custom-bg absolute inset-0"></div>
-        <div className=" relative z-10 ">
+        <div className="absolute inset-0 opacity-15 custom-bg"></div>
+        <div className="relative z-10 ">
           <Navbar />
           <div className=" mt-[150px] w-full mx-auto flex items-center content-center justify-between gap-[44px]">
             <div className="w-full">
@@ -50,7 +50,7 @@ const Hero = () => {
                 Experience the future of communication with ClearLink - where
                 crystal-clear video conferencing meets unparalleled simplicity.
               </p>
-              <div className="flex mt-12 items-center content-center gap-5">
+              <div className="flex items-center content-center gap-5 mt-12">
                 <button className=" rounded-[100px] py-4 px-7 bg-[#175cd3] text-[#ffffff] font-semibold text-base leading-[28px] shadow-sm">
                   Start your free trial
                 </button>
@@ -60,8 +60,8 @@ const Hero = () => {
                   Discover AI assistant
                 </div>
               </div>
-              <div className="flex mt-12 items-center content-center gap-4">
-                <div className="profiles flex items-center content-center">
+              <div className="flex items-center content-center gap-4 mt-12">
+                <div className="flex items-center content-center profiles">
                   <div className=" w-10 h-10 rounded-[200px] border-[0.75px] border-[#175cd3] ">
                     <img src={profile} alt=""></img>
                   </div>
@@ -78,8 +78,8 @@ const Hero = () => {
                     <img src={profile5} alt=""></img>
                   </div>
                 </div>
-                <div className="ratings flex flex-col items-center content-center">
-                  <div className="stars flex items-center content-center gap-1">
+                <div className="flex flex-col items-center content-center ratings">
+                  <div className="flex items-center content-center gap-1 stars">
                     <img src={star} alt=""></img>
                     <img src={star} alt=""></img>
                     <img src={star} alt=""></img>
@@ -91,14 +91,14 @@ const Hero = () => {
                   </div>
                   <div className="flex">
                     <p className=" font-medium text-base leading-[24px] text-[#475467]">
-                      from 3000+ reviews
+                      from 2000+ reviews
                     </p>
                   </div>
                 </div>
               </div>
             </div>
             <div className="image-grid-container w-full border-[1px] border-[#b2ddff] bg-[#eff8ff] rounded-2xl p-5 shadow-2xl">
-              <div className="w-full flex flex-col items-center content-center">
+              <div className="flex flex-col items-center content-center w-full">
                 <div className="flex items-center content-center gap-5">
                   <div className="w-[160px] h-[160px] rounded-xl">
                     <img src={avatar} alt=""></img>
@@ -123,7 +123,7 @@ const Hero = () => {
                 </div>
               </div>
 
-              <div className="controls w-full flex items-center content-center justify-center gap-4 mt-10">
+              <div className="flex items-center content-center justify-center w-full gap-4 mt-10 controls">
                 <div className=" w-11 h-11 rounded-[100px] bg-white border-[1px] border-[#d1e9ff] shadow-sm p-3">
                   <img src={mic} alt=""></img>
                 </div>

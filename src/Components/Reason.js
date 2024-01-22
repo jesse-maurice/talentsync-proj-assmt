@@ -13,7 +13,7 @@ const Reason = () => {
   useEffect(() => {
     ScrollReveal().reveal(".arrow", {
       distance: "60px",
-      duration: 3000,
+      duration: 2000,
       easing: "ease-in-out",
       origin: "center",
       reset: false,
@@ -21,7 +21,7 @@ const Reason = () => {
     
     ScrollReveal().reveal(".link-container", {
       distance: "60px",
-      duration: 3000,
+      duration: 2000,
       easing: "ease-in-out",
       origin: "left",
       reset: false,
