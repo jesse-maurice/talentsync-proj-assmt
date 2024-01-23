@@ -7,8 +7,8 @@ import apple from '../assets/images/Mobile app store badge.png';
 const Footer = () => {
   return (
     <>
-      <div className="w-full flex content-center justify-between gap-[100px] px-10 pt-[46px] pb-5 font-inter">
-        <div className="flex flex-col content-center w-[600px] gap-6">
+      <div className="w-full flex max-sm:flex-col content-center justify-between lg:gap-[100px] md:gap-[50px] max-sm:gap-[50px] px-10 max-sm:px-5 pt-[46px] pb-5 font-inter">
+        <div className="flex flex-col content-center max-sm:w-full w-[600px] gap-6">
           <div className="flex items-center content-center gap-2">
             <img src={logo} alt="clearlink-logo"></img>
             <h1 className=" font-semibold text-xl leading-[29.05px] text-[#101828]">
@@ -20,7 +20,7 @@ const Footer = () => {
             conferencing. Join us in shaping the future of communication!
           </p>
         </div>
-        <div className="flex content-center justify-between w-full gap-8">
+        <div className="lg:flex md:grid md:grid-cols-3 max-sm:grid max-sm:grid-cols-3 content-center justify-between w-full gap-8">
           <div className="flex flex-col content-center gap-3">
             <p className="text-sm font-semibold text-[#667085]">Product</p>
             <ul className="flex flex-col content-center gap-3">

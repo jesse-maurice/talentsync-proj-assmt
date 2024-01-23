@@ -37,24 +37,24 @@ const Hero = () => {
 
   return (
     <>
-      <div className="w-full font-inter pt-[40px] px-10 pb-[96px] relative">
+      <div className="w-full font-inter pt-[40px] px-10 max-sm:px-5 pb-[96px] relative">
         <div className="absolute inset-0 opacity-15 custom-bg"></div>
         <div className="relative z-10 ">
           <Navbar />
-          <div className=" mt-[150px] w-full mx-auto flex items-center content-center justify-between gap-[44px]">
+          <div className=" mt-[150px] w-full mx-auto flex lg:flex-row md:flex-col items-center content-center justify-between gap-[44px]">
             <div className="w-full">
-              <h1 className=" font-semibold text-[50px] leading-[60px] text-[#1d2939] tracking-[-2%]">
+              <h1 className=" font-semibold text-[50px] max-sm:text-[40px] max-sm:leading-[45px] leading-[60px] text-[#1d2939] tracking-[-2%]">
                 Uniting the world, <br></br> one video call at a time
               </h1>
-              <p className=" font-normal w-[550px] mt-4 text-xl leading-8 text-[#667085]">
+              <p className="max-sm:text-sm md:text-base font-normal w-[550px] max-sm:w-full mt-4 lg:text-xl leading-8 text-[#667085]">
                 Experience the future of communication with ClearLink - where
                 crystal-clear video conferencing meets unparalleled simplicity.
               </p>
               <div className="flex items-center content-center gap-5 mt-12">
-                <button className=" rounded-[100px] py-4 px-7 bg-[#175cd3] text-[#ffffff] font-semibold text-base leading-[28px] shadow-sm">
+                <button className=" rounded-[100px] py-4 px-7 bg-[#175cd3] text-[#ffffff] font-semibold max-sm:text-xs text-base leading-[28px] shadow-sm">
                   Start your free trial
                 </button>
-                <div className="flex text-base font-semibold text-[#175cd3] items-center content-center gap-3">
+                <div className="flex max-sm:text-xs text-base font-semibold text-[#175cd3]  items-center content-center gap-3">
                   {" "}
                   <img src={droid} alt=""></img>
                   Discover AI assistant
@@ -97,7 +97,7 @@ const Hero = () => {
                 </div>
               </div>
             </div>
-            <div className="image-grid-container w-full border-[1px] border-[#b2ddff] bg-[#eff8ff] rounded-2xl p-5 shadow-2xl">
+            <div className="image-grid-container max-sm:hidden w-full border-[1px] border-[#b2ddff] bg-[#eff8ff] rounded-2xl p-5 shadow-2xl">
               <div className="flex flex-col items-center content-center w-full">
                 <div className="flex items-center content-center gap-5">
                   <div className="w-[160px] h-[160px] rounded-xl">

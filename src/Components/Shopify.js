@@ -58,10 +58,10 @@ const Shopify = () => {
 
   return (
     <>
-      <div className="w-full px-10 py-[46px] bg-[#f9fafb] font-inter">
-        <div className="flex items-center content-center justify-between w-full gap-16 px-8 py-0">
+      <div className="w-full lg:px-10 max-sm:px-5 md:px-0 py-[46px] bg-[#f9fafb] font-inter">
+        <div className="lg:flex lg:flex-row md:flex md:flex-col items-center content-center justify-between w-full gap-16 px-8 max-sm:px-0 py-0">
           <div className="flex flex-col content-center w-full gap-9">
-            <img className="w-[130px] h-[35px]" src={shopify} alt=""></img>
+            <img className="w-[130px] max-sm:w-[100px] max-sm:h-[25px] h-[35px]" src={shopify} alt=""></img>
             <div className="flex content-center gap-1">
               <img src={star} alt=""></img>
               <img src={star} alt=""></img>
@@ -69,7 +69,7 @@ const Shopify = () => {
               <img src={star} alt=""></img>
               <img src={star} alt=""></img>
             </div>
-            <p className=" font-medium text-[38px] leading-[55px] text-[#101828]">
+            <p className=" font-medium max-sm:text-[30px] text-[38px] leading-[55px] max-sm:leading-[45px] text-[#101828]">
               ClearLink has upgraded our remote meetings. High-quality video,
               screen sharing, and top-notch security make it essential for our
               team.
@@ -79,30 +79,30 @@ const Shopify = () => {
                 <img src={avatar} alt=""></img>
               </div>
               <div className="w-[412px] flex flex-col content-center gap-[2px]">
-                <h3 className=" font-semibold text-lg text-[#101828]">
+                <h3 className=" font-semibold max-sm:text-sm text-lg text-[#101828]">
                   Sarah Thompson
                 </h3>
-                <p className="text-base font-normal text-[#475467] ">
+                <p className="text-base max-sm:text-xs font-normal text-[#475467] ">
                   Project Manager, Shopify
                 </p>
               </div>
               <div className="flex items-center content-center gap-8 ">
                 <div className="flex items-center justify-center w-11 h-11 rounded-[28px] border-[1px] border-[#d1e9ff] bg=[#ffffff] bg-opacity-90">
                   <i
-                    class="fa-solid fa-arrow-left"
+                    className="fa-solid fa-arrow-left"
                     style={{ color: "#175cd3" }}
                   ></i>
                 </div>
                 <div className="flex items-center justify-center w-11 h-11 rounded-[28px] border-[1px] border-[#d1e9ff] bg=[#ffffff] bg-opacity-90">
                   <i
-                    class="fa-solid fa-arrow-right"
+                    className="fa-solid fa-arrow-right"
                     style={{ color: "#175cd3" }}
                   ></i>
                 </div>
               </div>
             </div>
           </div>
-          <div className="w-full flex flex-col items-center content-center justify-between gap-4 my-[30px] px-8">
+          <div className="w-full max-sm:hidden flex flex-col items-center content-center justify-between gap-4 my-[30px] px-8">
             <div className="flex items-center content-center justify-center w-full gap-4 mx-auto">
               <img
                 className="study w-[140px] h-[140px] mt-[83px]"
@@ -111,7 +111,7 @@ const Shopify = () => {
               ></img>
               <img className="glasses w-[140px] h-[220px]" src={image} alt=""></img>
             </div>
-            <div className="flex content-center justify-between w-full gap-4">
+            <div className="lg:flex md:flex max-sm:flex content-center justify-between md:justify-center w-full gap-4">
               <img className="people w-[172px] h-[108px]" src={image2} alt=""></img>
               <img className="smile w-[140px] h-[220px]" src={image3} alt=""></img>
               <img className="laptop w-[172px] h-[108px]" src={image1} alt=""></img>

@@ -11,7 +11,7 @@ import VideoRecord from './Components/VideoRecord';
 
 function App() {
   return (
-    <div className="w-full ">
+    <div className="w-full 2xl:w-[1440px] 2xl:mx-auto overflow-hidden ">
       <Hero />
       <Socials />
       <Reason />

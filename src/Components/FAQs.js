@@ -57,8 +57,8 @@ const FAQs = () => {
 
   return (
     <>
-      <div className="w-full px-10 py-[46px] font-inter">
-        <div className="flex content-center justify-between w-full gap-[46px]">
+      <div className="w-full px-10 max-sm:px-5 py-[46px] font-inter">
+        <div className="lg:flex lg:flex-row md:flex md:flex-col max-sm:flex-col content-center justify-between w-full gap-[46px]">
           <div className="flex flex-col content-center w-full">
             <h3 className=" font-semibold text-base text-[#175cd3]">Support</h3>
             <h1 className="mt-3 mb-5 text-4xl text-[#1d2939] font-semibold ">
@@ -70,11 +70,11 @@ const FAQs = () => {
               team.
             </p>
           </div>
-          <div className="flex flex-col w-full">
+          <div className="flex flex-col max-sm:mt-5 content-center w-full">
             <div className="one w-full flex flex-col shadow-sm rounded-2xl border-[1px] border-[#eaecf0] bg-[#f9fafb] content-center p-6 ">
-              <div className="w-full ">
+              <div className="w-full max-sm:flex max-sm:flex-col ">
                 <div className="flex items-center content-center justify-between w-full mb-2">
-                  <h2 className=" text-sm font-semibold text-[#101828] ">
+                  <h2 className=" text-sm max-sm:text-xs font-semibold text-[#101828] ">
                     How many participants can join a ClearLink video conference?{" "}
                   </h2>
                   <div className="flex items-center border-[1px] border-[#98a2b3] rounded-full justify-center w-4 h-4 ">
@@ -84,7 +84,7 @@ const FAQs = () => {
                     ></i>
                   </div>
                 </div>
-                <p className="text-xs pr-12 leading-[18px] font-normal text-[#475467] ">
+                <p className="text-sm max-sm:text-[10px] pr-12 leading-[18px] max-sm:leading-[16px] font-normal text-[#475467] ">
                   ClearLink offers flexible meeting options. Depending on your
                   subscription plan, you can host meetings with varying numbers
                   of participants. Our plans are designed to accommodate small
@@ -94,7 +94,7 @@ const FAQs = () => {
               </div>
             </div>
             <div className="two flex items-center content-center justify-between w-full p-6 mt-1 border-b-[1px] border-[#eaecf0] shadow-sm">
-              <div className=" text-sm font-semibold text-[#101828]">
+              <div className=" text-sm max-sm:text-xs font-semibold text-[#101828]">
                 Can I use ClearLink on multiple devices?
               </div>
               <div className="flex items-center border-[1px] border-[#98a2b3] rounded-full justify-center w-4 h-4 ">
@@ -105,7 +105,7 @@ const FAQs = () => {
               </div>
             </div>
             <div className="three flex items-center content-center justify-between w-full p-6 mt-1 border-b-[1px] border-[#eaecf0] shadow-sm">
-              <div className=" text-sm font-semibold text-[#101828]">
+              <div className=" text-sm font-semibold max-sm:text-xs text-[#101828]">
                 Is ClearLink compatible with other video conferencing platforms?
               </div>
               <div className="flex items-center border-[1px] border-[#98a2b3] rounded-full justify-center w-4 h-4 ">
@@ -116,7 +116,7 @@ const FAQs = () => {
               </div>
             </div>
             <div className="four flex items-center content-center justify-between w-full p-6 mt-1 border-b-[1px] border-[#eaecf0] shadow-sm">
-              <div className=" text-sm font-semibold text-[#101828]">
+              <div className=" text-sm font-semibold max-sm:text-xs text-[#101828]">
                 How does ClearLink ensure the security of my video conferences?
               </div>
               <div className="flex items-center border-[1px] border-[#98a2b3] rounded-full justify-center w-4 h-4 ">
@@ -127,7 +127,7 @@ const FAQs = () => {
               </div>
             </div>
             <div className="five flex items-center content-center justify-between w-full p-6 mt-1 border-b-[1px] border-[#eaecf0] shadow-sm">
-              <div className=" text-sm font-semibold text-[#101828]">
+              <div className=" text-sm font-semibold max-sm:text-xs text-[#101828]">
                 Do I need to download any software to use ClearLink?
               </div>
               <div className="flex items-center border-[1px] border-[#98a2b3] rounded-full justify-center w-4 h-4 ">
@@ -138,7 +138,7 @@ const FAQs = () => {
               </div>
             </div>
             <div className="six flex items-center content-center justify-between w-full p-6 mt-1 border-b-[1px] border-[#eaecf0] shadow-sm">
-              <div className=" text-sm font-semibold text-[#101828]">
+              <div className=" text-sm font-semibold max-sm:text-xs text-[#101828]">
                 What kind of customer support does ClearLink provide?
               </div>
               <div className="flex items-center border-[1px] border-[#98a2b3] rounded-full justify-center w-4 h-4 ">

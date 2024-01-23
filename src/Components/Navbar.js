@@ -12,7 +12,7 @@ const Navbar = () => {
             ClearLink<span className="text-[#528bff]">.</span>{" "}
           </h1>
         </div>
-        <div>
+        <div className="hidden lg:inline-flex">
           <ul className="flex font-semibold text-sm leading-7 text-[#667085] gap-10">
             <li className="flex items-center content-center justify-center gap-[6px]">
               Products <i class="fa-solid fa-angle-down"></i>
@@ -26,7 +26,7 @@ const Navbar = () => {
             <li>Pricing</li>
           </ul>
         </div>
-        <div className="flex items-center content-center justify-center gap-2">
+        <div className="hidden lg:flex items-center content-center justify-center gap-2">
           <button className=" rounded-[100px] border-[1px] border-[#98a2b3] bg-[#ffffff] py-[10px] px-6 shadow-sm text-xs font-semibold leading-6 text-[#101828]">
             Talk to sales
           </button>
@@ -34,6 +34,7 @@ const Navbar = () => {
             Sign up for free
           </button>
         </div>
+        <i className="lg:hidden max-sm:inline-block md:inline-block fa-solid fa-bars fa-lg" style={{color: "#101828"}}></i>
       </div>
     </>
   );
