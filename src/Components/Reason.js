@@ -108,7 +108,7 @@ const Reason = () => {
               </div>
             </div>
             <img
-              className="arrow shadow-2xl rounded-2xl w-[500px] h-[500px]  z-10"
+              className="arrow shadow-2xl rounded-2xl w-[500px] h-[500px] xl:w-[600px] xl:h-[600px]  z-10"
               src={user}
               alt=""
             ></img>
