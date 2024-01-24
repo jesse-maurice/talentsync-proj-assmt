@@ -45,13 +45,13 @@ const Reason = () => {
               lead. Our cutting-edge video conferencing app offers:
             </p>
             <img
-              className="max-sm:hidden md:hidden lg:inline-block arrow z-50 absolute top-[80.93px] right-[215.46px]"
+              className="max-sm:hidden md:hidden lg:inline-block arrow z-50 absolute top-[82.93px] right-[245.46px] 2xl:right-[290.46px] 2xl:top-[83.93px]"
               src={arrow}
               alt=""
             ></img>
           </div>
           <div className="w-full lg:flex lg:flex-row md:flex md:flex-col items-center content-center justify-between gap-16 ">
-            <div className="link-container max-w-[800px] my-[19.5px]">
+            <div className="link-container max-w-[800px] xl:w-full my-[19.5px]">
               <div className="flex max-sm:flex-col w-full items-center content-center gap-10">
                 <div className=" lg:w-[260px] md:w-full max-sm:w-full h-[200px]">
                   <div className="flex items-center justify-center w-14 h-14 border-[1px] border-[#eaecf0] rounded-full bg-[#f9fafb]">
@@ -108,7 +108,7 @@ const Reason = () => {
               </div>
             </div>
             <img
-              className="arrow shadow-2xl rounded-2xl w-[500px] h-[500px] xl:w-[600px] xl:h-[600px]  z-10"
+              className="arrow shadow-2xl rounded-2xl w-[500px] h-[500px] xl:w-full xl:h-full  z-10"
               src={user}
               alt=""
             ></img>
