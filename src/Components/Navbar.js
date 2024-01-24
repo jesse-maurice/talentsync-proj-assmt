@@ -1,8 +1,16 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import logo from '../assets/images/Group.png';
 
 const Navbar = () => {
+  const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
+
+  const toggleMobileMenu = () => {
+    setMobileMenuOpen(!isMobileMenuOpen);
+  };
+
+
+
   return (
     <>
       <div className="w-full font-inter border-[1px] border-[#d0d5dd] flex content-center items-center justify-between py-3 px-8 rounded-[100px] custom-gradient">
@@ -34,8 +42,41 @@ const Navbar = () => {
             Sign up for free
           </button>
         </div>
-        <i className="lg:hidden max-sm:inline-block md:inline-block fa-solid fa-bars fa-lg" style={{color: "#101828"}}></i>
+        <i
+          onClick={toggleMobileMenu}
+          className={`fa-lg lg:hidden max-sm:inline-flex md:inline-flex ${
+            isMobileMenuOpen ? "fa-solid fa-xmark" : "fa-solid fa-bars"
+          }`}
+          style={{ color: "#101828", cursor: "pointer" }}
+        ></i>
       </div>
+      {isMobileMenuOpen && (
+        <div className="lg:hidden z-50 rounded-xl absolute custom-gradient p-2 border-[0.5px] shadow-2xl border-[#98a2b3] mt-1 w-full">
+          {/* Mobile menu content */}
+          <ul className="flex font-semibold text-sm leading-7 text-[#667085] flex-col justify-center gap-1 items-center content-center">
+            <li className=" hover:underline hover:underline-offset-8">
+              Products
+            </li>
+            <li className=" hover:underline hover:underline-offset-8">
+              Solutions
+            </li>
+            <li className=" hover:underline hover:underline-offset-8">
+              Resources
+            </li>
+            <li className=" hover:underline hover:underline-offset-8">
+              Pricing
+            </li>
+          </ul>
+          <div className=" lg:flex md:flex max-sm:flex md:flex-col max-sm:flex-col md:items-center md:mt-2 max-sm:mt-2 items-center content-center justify-center gap-2">
+            <button className=" rounded-[100px] border-[1px] border-[#98a2b3] bg-[#ffffff] py-[10px] px-6 shadow-sm text-xs font-semibold leading-6 text-[#101828]">
+              Talk to sales
+            </button>
+            <button className="py-[10px] px-6 shadow-sm text-xs rounded-[100px] font-semibold leading-6 text-[#ffffff] bg-[#175cd3]">
+              Sign up for free
+            </button>
+          </div>
+        </div>
+      )}
     </>
   );
 }
